@@ -18,8 +18,7 @@ function MainNavigationRoute() {
     open: TransitionSpecs.TransitionIOSSpec,
     close: TransitionSpecs.TransitionIOSSpec,
   },
-  headerStyleInterpolator: HeaderStyleInterpolators.forFade,
-  cardStyleInterpolator: ({ current, next, layouts }) => {
+  cardStyleInterpolator: ({ current }) => {
     return {
       overlayStyle: {
         opacity: current.progress.interpolate({
@@ -44,7 +43,7 @@ function MainNavigationRoute() {
     title: 'Custom animation',
     ...MyTransition,
   }} />
-      <Stack.Screen name="bmiScreen" component={BmiScreen}  
+      <Stack.Screen name="BmiScreen" component={BmiScreen}  
       options={{
     title: 'Custom animation',
     ...MyTransition,
@@ -59,7 +58,7 @@ function MainNavigationRoute() {
     title: 'Custom animation',
     ...MyTransition,
   }}/>
-      
+      <Stack.Screen name="UnitDic" component={UnitDic} />
     </Stack.Navigator>
   );
 
