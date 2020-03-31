@@ -5,7 +5,7 @@ import {useNavigation} from '@react-navigation/native';
 const Units = (props) => {
   const navigation = useNavigation();
   /* weight starts here */
-  if (props.kind === 'Weight') {
+  if (props.kind === 'WeightScreen') {
     if (props.type === 'From') {
       return (
         <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
@@ -360,7 +360,7 @@ const Units = (props) => {
   }
   /* weight ends here */
   /* Volume starts here */
-  if (props.kind === 'Volume') {
+  if (props.kind === 'VolumeScreen') {
     if (props.type === 'From') {
       return (
         <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
@@ -953,7 +953,7 @@ const Units = (props) => {
   }
   /* Volume ends here */
   /* Length starts here */
-  if (props.kind === 'Length') {
+  if (props.kind === 'LengthScreen') {
     if (props.type === 'From') {
       return (
         <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
@@ -1308,7 +1308,7 @@ const Units = (props) => {
   }
   /* Length ends here */
   /* Area starts here */
-  if (props.kind === 'Area') {
+  if (props.kind === 'AreaScreen') {
     if (props.type === 'From') {
       return (
         <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>

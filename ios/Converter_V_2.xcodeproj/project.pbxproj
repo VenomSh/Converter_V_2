@@ -16,6 +16,9 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* Converter_V_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Converter_V_2Tests.m */; };
+		7D692D5B6B4C439C904048BB /* Anton.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7DDC38EC09F4CDE83378D6F /* Anton.ttf */; };
+		05273852515E4CB9BEA22CC4 /* LuckiestGuy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C3AFE0F549340DBA9B3BD2B /* LuckiestGuy.ttf */; };
+		D3E256857F4E48259082CBAD /* theboldfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 887DC6B553324DC89FDF57AB /* theboldfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		2D02E4901E0B4A5D006451C7 /* Converter_V_2-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Converter_V_2-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		C7DDC38EC09F4CDE83378D6F /* Anton.ttf */ = {isa = PBXFileReference; name = "Anton.ttf"; path = "../assets/fonts/Anton.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5C3AFE0F549340DBA9B3BD2B /* LuckiestGuy.ttf */ = {isa = PBXFileReference; name = "LuckiestGuy.ttf"; path = "../assets/fonts/LuckiestGuy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		887DC6B553324DC89FDF57AB /* theboldfont.ttf */ = {isa = PBXFileReference; name = "theboldfont.ttf"; path = "../assets/fonts/theboldfont.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 				00E356EF1AD99517003FC87E /* Converter_V_2Tests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				0976C9E9CA2C416B97D766F0 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -156,6 +163,17 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		0976C9E9CA2C416B97D766F0 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				C7DDC38EC09F4CDE83378D6F /* Anton.ttf */,
+				5C3AFE0F549340DBA9B3BD2B /* LuckiestGuy.ttf */,
+				887DC6B553324DC89FDF57AB /* theboldfont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -295,6 +313,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				7D692D5B6B4C439C904048BB /* Anton.ttf in Resources */,
+				05273852515E4CB9BEA22CC4 /* LuckiestGuy.ttf in Resources */,
+				D3E256857F4E48259082CBAD /* theboldfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
