@@ -12,7 +12,7 @@ const Units = (props) => {
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
-                nameF: 'Gramme',
+                nameF: 'Gram',
                 dataF: 1,
                 subDataF: 1,
                 idF: 1,
@@ -22,14 +22,14 @@ const Units = (props) => {
               <Text
                 allowFontScaling={false}
                 style={{fontSize: 30, marginLeft: '5%', color: '#6E5160'}}>
-                Gramme
+                Gram
               </Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
-                nameF: 'MilliGramme',
+                nameF: 'MilliGram',
                 dataF: 1000,
                 subDataF: 1,
                 idF: 1,
@@ -39,14 +39,14 @@ const Units = (props) => {
               <Text
                 allowFontScaling={false}
                 style={{fontSize: 30, marginLeft: '5%', color: '#6E5160'}}>
-                MilliGramme
+                MilliGram
               </Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
-                nameF: 'KiloGramme',
+                nameF: 'KiloGram',
                 dataF: 0.001,
                 subDataF: 1,
                 idF: 1,
@@ -56,7 +56,7 @@ const Units = (props) => {
               <Text
                 allowFontScaling={false}
                 style={{fontSize: 30, marginLeft: '5%', color: '#6E5160'}}>
-                KiloGramme
+                KiloGram
               </Text>
             </View>
           </TouchableOpacity>
@@ -187,7 +187,7 @@ const Units = (props) => {
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
-                name: 'Gramme',
+                name: 'Gram',
                 data: 1,
                 subData: 1,
                 id: 1,
@@ -197,14 +197,14 @@ const Units = (props) => {
               <Text
                 allowFontScaling={false}
                 style={{fontSize: 30, marginLeft: '5%', color: '#6E5160'}}>
-                Gramme
+                Gram
               </Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
-                name: 'MilliGramme',
+                name: 'MilliGram',
                 data: 1000,
                 subData: 1,
                 id: 1,
@@ -214,14 +214,14 @@ const Units = (props) => {
               <Text
                 allowFontScaling={false}
                 style={{fontSize: 30, marginLeft: '5%', color: '#6E5160'}}>
-                MilliGramme
+                MilliGram
               </Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
-                name: 'KiloGramme',
+                name: 'KiloGram',
                 data: 0.001,
                 subData: 1,
                 id: 1,
@@ -231,7 +231,7 @@ const Units = (props) => {
               <Text
                 allowFontScaling={false}
                 style={{fontSize: 30, marginLeft: '5%', color: '#6E5160'}}>
-                KiloGramme
+                KiloGram
               </Text>
             </View>
           </TouchableOpacity>

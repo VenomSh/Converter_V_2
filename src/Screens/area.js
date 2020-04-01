@@ -328,7 +328,7 @@ function FindingResalt(props) {
         numberOfLines={1}
         style={{fontSize: 15, color: 'rgb(22,34,48)', width: '67%', textAlign: 'center'}}>
         {' '}
-         input something{' '}
+         choose your unit{' '}
       </Text>
     );
 }

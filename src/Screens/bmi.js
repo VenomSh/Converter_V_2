@@ -485,8 +485,8 @@ function WeightSection(props) {
 /* Resualt Section start */
 function ResualtSection(props) {
   if (props.whichCal) {
-    if (props.rMetre !== 'Height in Metre') {
-      if (props.rKg !== 'Weight in Kg') {
+    if (props.rMetre !== '. . . . .') {
+      if (props.rKg !== '. . . . .') {
         // Resualt for Metric
         return (
               <Text
@@ -499,9 +499,9 @@ function ResualtSection(props) {
       } else {
         return (
               <Text
-                style={{width: '50%', color: 'rgb(22,34,48)', fontSize: 25 , textAlign: 'center'}}
+                style={{width: '85%', color: 'rgb(22,34,48)', fontSize: 15 , textAlign: 'center'}}
                 allowFontScaling={false}
-                numberOfLines={1}>
+                numberOfLines={2}>
                 please write your Weight
               </Text>
         );
@@ -509,17 +509,17 @@ function ResualtSection(props) {
     } else {
       return (
             <Text
-              style={{width: '50%', color: 'rgb(22,34,48)', fontSize: 25 , textAlign: 'center'}}
+              style={{width: '85%', color: 'rgb(22,34,48)', fontSize: 15 , textAlign: 'center'}}
               allowFontScaling={false}
-              numberOfLines={1}>
+              numberOfLines={2}>
               please Write your Height
             </Text>
       );
     }
   } else {
-    if (props.rFoot !== 'Height in Foot') {
-      if (props.rInch !== 'Height in Inch') {
-        if (props.rPound !== 'Weight in Pound') {
+    if (props.rFoot !== '. . . . .') {
+      if (props.rInch !== '. . . . .') {
+        if (props.rPound !== '. . . . .') {
           // Resualt for Foot&Inch&Pound
           return (
                 <Text
@@ -535,7 +535,7 @@ function ResualtSection(props) {
         } else {
           return (
                 <Text
-                  style={{width: '50%', color: 'rgb(22,34,48)', fontSize: 25 , textAlign: 'center'}}
+                  style={{width: '85%', color: 'rgb(22,34,48)', fontSize: 15 , textAlign: 'center'}}
                   allowFontScaling={false}
                   numberOfLines={1}>
                   please Write your Weight
@@ -545,9 +545,9 @@ function ResualtSection(props) {
       } else {
         return (
               <Text
-                style={{width: '50%', color: 'rgb(22,34,48)', fontSize: 25 , textAlign: 'center'}}
+                style={{width: '85%', color: 'rgb(22,34,48)', fontSize: 15 , textAlign: 'center'}}
                 allowFontScaling={false}
-                numberOfLines={1}>
+                numberOfLines={2}>
                 please write your height (Inch)
               </Text>
         );
@@ -555,9 +555,9 @@ function ResualtSection(props) {
     } else {
       return (
             <Text
-              style={{width: '50%', color: 'rgb(22,34,48)', fontSize: 25 , textAlign: 'center'}}
+              style={{width: '85%', color: 'rgb(22,34,48)', fontSize: 15 , textAlign: 'center'}}
               allowFontScaling={false}
-              numberOfLines={1}>
+              numberOfLines={2}>
               please write your height (Foot)
             </Text>
       );
