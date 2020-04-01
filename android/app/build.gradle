@@ -190,6 +190,8 @@ android {
 dependencies {
 
     implementation project(':react-native-linear-gradient')
+      compile project(':react-native-text-gradient')
+
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
