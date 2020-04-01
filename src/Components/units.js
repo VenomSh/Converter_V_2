@@ -8,7 +8,7 @@ const Units = (props) => {
   if (props.kind === 'WeightScreen') {
     if (props.type === 'From') {
       return (
-        <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
@@ -183,7 +183,7 @@ const Units = (props) => {
       );
     } else if (props.type === 'To') {
       return (
-        <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
@@ -363,7 +363,7 @@ const Units = (props) => {
   if (props.kind === 'VolumeScreen') {
     if (props.type === 'From') {
       return (
-        <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
@@ -657,7 +657,7 @@ const Units = (props) => {
       );
     } else if (props.type === 'To') {
       return (
-        <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
@@ -956,7 +956,7 @@ const Units = (props) => {
   if (props.kind === 'LengthScreen') {
     if (props.type === 'From') {
       return (
-        <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
@@ -1131,7 +1131,7 @@ const Units = (props) => {
       );
     } else if (props.type === 'To') {
       return (
-        <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
@@ -1311,7 +1311,7 @@ const Units = (props) => {
   if (props.kind === 'AreaScreen') {
     if (props.type === 'From') {
       return (
-        <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {
@@ -1486,7 +1486,7 @@ const Units = (props) => {
       );
     } else if (props.type === 'To') {
       return (
-        <View style={{flex: 1, backgroundColor: '#ECF0F1'}}>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
           <TouchableOpacity
             onPress={() =>
               navigation.navigate(props.kind, {

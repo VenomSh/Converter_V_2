@@ -12,7 +12,6 @@ import IconArea from '../Icons/areaD.png';
 import Circle from '../Image/circle.png';
 import Input from '../Image/input.png';
 
-// rgb(22,34,48)
 
 function ScreenWeight() {
 

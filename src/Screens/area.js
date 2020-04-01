@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, Image, ImageBackground} from 'react-native';
+import {View, Text, TouchableOpacity, Image, ImageBackground, TextInput} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {useNavigation} from '@react-navigation/native';
 import {useRoute} from '@react-navigation/native';
@@ -10,6 +10,7 @@ import IconBmi from '../Icons/bmiD.png';
 import IconVolume from '../Icons/volumeD.png';
 import IconArea from '../Icons/area.png';
 import Circle from '../Image/circle.png';
+import Input from '../Image/input.png';
 
 function ScreenArea() {
   const navigation = useNavigation();
@@ -34,6 +35,18 @@ function ScreenArea() {
   var toSubData = ToSubData[0];
   var setToSubData = ToSubData[1];
 
+   var InputS = useState('Area');
+   var inputValue = InputS[0];
+   var setInput = InputS[1];
+
+   var Answer = useState(0);
+   var answerValue = Answer[0];
+   var setAnswer = Answer[1];
+
+   var Result = useState(0);
+   var resultValue = Result[0];
+   var setResult = Result[1];
+
   return (
     <LinearGradient colors={['rgb(36,53,81)','rgb(22,34,48)']} style={{flex: 1}}>
     {
@@ -54,9 +67,16 @@ function ScreenArea() {
         <View style={{flex: 0.35,  marginTop: '-8%', justifyContent: 'center', alignItems: 'center'}}>
         <View style={{flex:1, width: '50%', alignItems: 'center', marginLeft: '-2%'}}>
         <ImageBackground source={Circle} style={{height: '116%', width: '105%', marginTop: '-11%', justifyContent: 'center', alignItems: 'center'}} resizeMode="cover">
-        <Text allowFontScaling={false} style={{fontSize: 19, width: '85%', marginRight: '-7%', color: 'rgb(22,34,48)'}} numberOfLines={1}>
-        1651656515114554
-        </Text>
+         <FindingResalt
+              IdTo={toId}
+              ToData={toData}
+              ToSubData={toSubData}
+              IdFrom={fromId}
+              FromData={fromData}
+              FromSubData={fromSubData}
+              updateAnswer={() => setAnswer}
+              finalAnswer={answerValue}
+            />
         </ImageBackground>
         </View>
         </View>
@@ -102,6 +122,32 @@ function ScreenArea() {
         {
           // input Scetion
         }
+        <View style={{flex: 0.374, justifyContent: 'flex-start'}}>
+        <View style={{flex: 0.35, marginTop: '-5%'}}>
+        <ImageBackground style={{height: '110%', alignItems: 'center', justifyContent: 'center'}} source={Input}>
+        <TextInput
+              style={{width: '80%', color: '#30789D', fontSize: 20, marginTop: '3%'}}
+              allowFontScaling={false}
+              numberOfLines={1}
+              editable={fromId === -1 || toId === -1 ? false : true}
+              keyboardType="decimal-pad"
+              onFocus={() => {
+                if (inputValue === 'Area') {
+                  setInput('');
+                }
+              }}
+              onChangeText={event => {
+                setInput(event);
+                setAnswer(0);
+                if (inputValue !== 'Weight') {
+                  setAnswer(event);
+                }
+              }}
+              value={inputValue}
+            />
+        </ImageBackground>
+        </View>
+        </View>
         </View>
         {
           // where the tab bar is
@@ -218,6 +264,73 @@ function TextTo(props) {
       </Text>
     );
   }
+}
+
+function FindingResalt(props) {
+  if (props.finalAnswer !== 0) {
+    if (props.IdFrom === 1) {
+      if (props.IdTo === 1) {
+        return (
+          <Text
+            allowFontScaling={false}
+            numberOfLines={1}
+            style={{fontSize: 15, color: 'rgb(22,34,48)', width: '67%'}}>
+            {' '}
+            {(props.finalAnswer * props.ToData * props.ToSubData) /
+              (props.FromData * props.FromSubData)}
+          </Text>
+        );
+      } else if (props.IdTo === 2) {
+        return (
+          <Text
+            allowFontScaling={false}
+            numberOfLines={1}
+            style={{fontSize: 20, color: 'rgb(22,34,48)', width: '67%', textAlign: 'center'}}>
+            {' '}
+            {(props.finalAnswer *
+              props.ToData *
+              Math.pow(10, props.ToSubData)) /
+              (props.FromData * props.FromSubData)}
+          </Text>
+        );
+      }
+    } else if (props.IdFrom === 2) {
+      if (props.IdTo === 1) {
+        return (
+          <Text
+            allowFontScaling={false}
+            numberOfLines={1}
+            style={{fontSize: 20, color: 'rgb(22,34,48)', width: '67%', textAlign: 'center'}}>
+            {' '}
+            {(props.finalAnswer * props.ToData * props.ToSubData) /
+              (props.FromData * Math.pow(10, props.FromSubData))}
+          </Text>
+        );
+      } else if (props.IdTo === 2) {
+        return (
+          <Text
+            allowFontScaling={false}
+            numberOfLines={1}
+            style={{fontSize: 20, color: 'rgb(22,34,48)', width: '67%', textAlign: 'center'}}>
+            {' '}
+            {(props.finalAnswer *
+              props.ToData *
+              Math.pow(10, props.ToSubData)) /
+              (props.FromData * Math.pow(10, props.FromSubData))}{' '}
+          </Text>
+        );
+      }
+    }
+  } else
+    return (
+      <Text
+        allowFontScaling={false}
+        numberOfLines={1}
+        style={{fontSize: 15, color: 'rgb(22,34,48)', width: '67%', textAlign: 'center'}}>
+        {' '}
+         input something{' '}
+      </Text>
+    );
 }
 
 export default ScreenArea;
