@@ -167,9 +167,9 @@ function ScreenWeight() {
           start={{x: 0, y: 0}}
           end={{x: 1, y: 0}}
           colors={[
-            'rgb(237,196,82)',
-            'rgb(237,196,82)',
-            'rgb(237,196,82)',
+            '#5dcbd3',
+            '#5dcbd3',
+            '#5dcbd3',
             'rgb(36,53,81)',
             'rgb(36,53,81)',
             'rgb(36,53,81)',

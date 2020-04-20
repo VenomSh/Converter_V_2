@@ -177,9 +177,9 @@ function ScreenArea() {
             'rgb(36,53,81)',
             'rgb(36,53,81)',
             'rgb(36,53,81)',
-            'rgb(237,196,82)',
-            'rgb(237,196,82)',
-            'rgb(237,196,82)',
+            '#5dcbd3',
+            '#5dcbd3',
+            '#5dcbd3',
           ]}
           style={{flex: 1, borderTopLeftRadius: 16,borderBottomRightRadius: 31,borderBottomLeftRadius: 31, borderTopRightRadius: 16, flexDirection: 'row', width: '95%'}}>
           <TouchableOpacity
